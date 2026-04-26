@@ -48,4 +48,13 @@ describe "Grupo de test" {
   test "Tom puede cazar a Jerry/Nibble" {
     assert.that(tom.puedeCazarA(nibbles))
   }
+
+  test "Tom puede comer a papo" {
+    assert.that(tom.puedeCazarA(papo))
+  }
+
+  test "Tom no puede comer a papo luego de que este tenga miedo" {
+    tom.comerRaton(jerry)
+    assert.notThat(tom.puedeCazarA(papo))
+  }
 }

@@ -5,6 +5,7 @@ object tom {
   }
   method comerRaton(raton) {
     energia += 12 + raton.peso()
+    papo.aumentaSuMiedo()
   }
   method velMaxima() = 5 + energia/10
 
@@ -37,6 +38,18 @@ object nibbles {
 
   method peso() = 35
   method distanciaATom() = 3
+}
+
+object papo {
+  var miedo = 0
+
+  method peso() = 35
+  method distanciaATom() = 3 + miedo
+
+  method miedo() = miedo
+  method aumentaSuMiedo() {
+    miedo += 10
+  }
 }
 
 // Inventar otro ratón
