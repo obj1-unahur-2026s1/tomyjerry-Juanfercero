@@ -44,4 +44,8 @@ describe "Grupo de test" {
     tom.correr(38)
     assert.equals(24, tom.velMaxima())
   }
+
+  test "Tom puede cazar a Jerry/Nibble" {
+    assert.that(tom.puedeCazarA(nibbles))
+  }
 }
