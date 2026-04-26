@@ -1,5 +1,5 @@
 object tom {
-  var energia = 50
+  var energia = 190
   method correr(metrosRecorridos) {
     energia -= metrosRecorridos / 2
   }
@@ -12,10 +12,16 @@ object tom {
 object jerry {
   var edad = 2
   var peso = edad * 20
+
+  method peso() = peso
+  method cumple() {
+    edad += 1
+  }
 }
 
 object nibbles {
-  const peso = 35
+
+  method peso() = 35
 }
 
 // Inventar otro ratón
